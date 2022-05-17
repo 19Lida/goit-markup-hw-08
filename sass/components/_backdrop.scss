@@ -57,6 +57,7 @@
    :focus {
   border-color: var(--accent-color);
 }
+}
 .backdrop-form__input:hover ~ .backdrop-form__icon,
 .backdrop-form__input:focus ~ .backdrop-form__icon {
   fill: var(--accent-color);
