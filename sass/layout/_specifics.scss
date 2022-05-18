@@ -3,6 +3,7 @@
   // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .specifics-list__box {
@@ -24,19 +25,24 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -15px;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
   }
 }
 .specifics-list__item {
   // margin-right: 30px;
-  width: 270px;
+  // width: 270px;
   @media screen and (min-width: 768px) {
-    flex-basis: 50%;
+    width: calc(100% - 4 * 15) / 2;
+    margin-right: 15px;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: 25%;
+    width: calc(100% - 8 * 15) / 4;
+    margin-right: 15px;
   }
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
