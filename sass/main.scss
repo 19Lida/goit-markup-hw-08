@@ -6,23 +6,15 @@
 ////////
 @import './components/header-menu';
 @import './components/logo';
-@import './components/menu-list';
-@import './components/connection-list';
 @import './components/soc';
 @import './components/join';
-
-@import './components/modal';
-@import './components/backdrop';
 @import './components/portfolio-filtr';
 @import './components/portfolio-pictures';
 /////////
 @import './common/container';
 @import './common/hero-button';
-
 @import './common/pre-title';
 @import './common/modal-button';
-@import './common/backdrop-form-button';
-@import './common/forma-footer';
 /////////
 @import './layout/header';
 @import './layout/hero';
@@ -36,5 +28,4 @@
 //////
 @import './utils/visually-hidden';
 @import './utils/root';
-
 @import './utils/mixins-footer';

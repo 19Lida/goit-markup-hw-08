@@ -8,23 +8,22 @@
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   justify-content: center;
-  @media screen and (min-width: 1200px) {
-  }
 }
 .application {
   list-style: none;
   padding: 0;
   margin: 0;
   // display: flex;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: none;
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
+
 .application__item {
   // margin-right: 30px;
   @media screen and (min-width: 1200px) {
