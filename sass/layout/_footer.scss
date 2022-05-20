@@ -4,17 +4,35 @@
   padding-bottom: 60px;
 }
 .address-main {
-  display: flex;
+  // display: flex;
   align-items: baseline;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .footer-address {
   margin-right: 70px;
   flex-grow: 1;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
 }
 .footer-logo {
   text-decoration: none;
   display: block;
   margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .logo footer-logo {
   text-decoration: none;
@@ -30,8 +48,17 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  // font-size: 26px;
+  // line-height: 1.2;
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2px;
+  }
+
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -45,13 +72,25 @@
   color: var(--white-color);
 }
 .address-list__item {
-  margin-bottom: 9px;
+  // margin-bottom: 9px;
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 .address-list__item:last-child {
-  margin-bottom: 0;
+  // margin-bottom: 0;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
 }
 .address-list__li {
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -61,7 +100,6 @@
   text-decoration: none;
 }
 .address-list__link {
-  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -71,7 +109,14 @@
   text-decoration: none;
 }
 .join {
-  margin-right: auto;
+  // margin-right: auto;
+  @media screen and (min-width: 767px) {
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }
 .join__title {
   margin-bottom: 20px;
@@ -83,26 +128,39 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .join__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  // display: flex;
   justify-content: center;
 }
 .join__item {
-  margin-right: 10px;
+  // margin-right: 10px;
 }
 .join__item:last-child {
-  margin-right: 0;
+  // margin-right: 0;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 
 .join__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   fill: var(--white-color);
@@ -130,9 +188,17 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .form__input-block {
-  display: flex;
+  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .form__post {
   width: 358px;
@@ -155,13 +221,18 @@
 
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .form__button {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   min-width: 200px;
-  margin-left: 12px;
+  // margin-left: 12px;
   padding: 10px 28px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -181,6 +252,15 @@
   :focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12px;
   }
 }
 .form__icon {
