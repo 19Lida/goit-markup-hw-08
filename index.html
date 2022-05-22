@@ -53,8 +53,8 @@
                     >+38 096 111 11 11</a
                   >
                 </li>
-              </ul>
-               <button type="button" class="menu-button is-open" data-menu-button>
+              </ul> -->
+    <!-- <button type="button" class="menu-button is-open" data-menu-button>
             <svg class="" width="40" height="40" aria-label="Переключатель меню">
               <use class="close-cross" href="./images/icons.svg#icon-close-black-18"></use>
               <use class="icon-menu" href="./images/icons.svg#icon-menu-40px"></use>
@@ -113,7 +113,7 @@
     <main>
       <!-- <section class="hero overlay">
         <div class="container">
-          <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения <br />для вашего бизнеса</h1>
           <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
         </div>
       </section> -->
@@ -179,7 +179,9 @@
           <ul class="application">
             <li class="application__item">
               <div class="application__box">
-                <img
+                <img 
+                  srcset="./images/application/app1-1x.jpg 1x, 
+                          ./images/application/app1-2x.jpg 2x"
                   src="./images/first_service.jpg"
                   alt="Работа на компьютерах"
                   class="application__image"
@@ -192,7 +194,9 @@
             </li>
             <li class="application__item">
               <div class="application__box">
-                <img
+                <img 
+                  srcset="./images/application/app2-1x.jpg 1x, 
+                          ./images/application/app2-2x.jpg 2x"
                   src="./images/second_servics.jpg"
                   alt="Работа на телефонах"
                   class="application__image"
@@ -205,7 +209,9 @@
             </li>
             <li class="application__item">
               <div class="application__box">
-                <img
+                <img 
+                 srcset="./images/application/app3-1x.jpg 1x, 
+                          ./images/application/app3-2x.jpg 2x"
                   src="./images/third_service.jpg"
                   alt="Работа на планшетах"
                   class="application__image"
@@ -226,7 +232,21 @@
           <ul class="team-list">
             <li class="team-list__item">
               <article>
-                <img src="./images/photo_1.jpg" alt="Фото" class="team-list__image" />
+                <picture>
+                   <source
+                  srcset="./images/workers/wor1x-desk.jpg 1x, ./images/workers/wor2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/workers/wor1x-tab.jpg 1x,./images/workers/wor2x-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/workers/wor1x-mob.jpg 1x, ./images/workers/wor2x-mob.jpg 2x"
+                  media="(min-width: 320px)"/>
+                  <img src="./images/photo_1.jpg" alt="Фото" class="team-list__image" />
+                </picture>
+               
                 <div class="team-list__box">
                   <h3 class="team-list__title">Игорь Демьяненко</h3>
                   <p class="team-list__text">Product Designer</p>
@@ -265,7 +285,22 @@
             </li>
             <li class="team-list__item">
               <article>
-                  <img src="./images/photo_2.jpg" alt="Ольга Репина" class="team-list__image" />
+                 <picture>
+                   <source
+                  srcset="./images/workers/wor2-1x-desk.jpg 1x, ./images/workers/wor2-2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/workers/wor2-1x-tab.jpg 1x,./images/workers/wor2-2x-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/workers/wor2-1x-mob.jpg 1x, ./images/workers/wor2-2x-mob.jpg 2x"
+                  media="(min-width: 320px)"/>
+                 <img src="./images/photo_2.jpg" alt="Ольга Репина" class="team-list__image" />
+                </picture>
+               
+                 
                 <div class="team-list__box">
                   <h3 class="team-list__title">Ольга Репина</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -304,7 +339,21 @@
             </li>
             <li class="team-list__item">
               <article>
-                  <img src="./images/photo_3.jpg" alt="Николай Тарасов" class="team-list__image" />
+                 <picture>
+                   <source
+                  srcset="./images/workers/wor3-1x-desk.jpg 1x, ./images/workers/wor3-2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/workers/wor3-1x-tab.jpg 1x,./images/workers/wor3-2x-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/workers/wor3-1x-mob.jpg 1x, ./images/workers/wor3-2x-mob.jpg 2x"
+                  media="(min-width: 320px)"/>
+                 <img src="./images/photo_3.jpg" alt="Николай Тарасов" class="team-list__image" />
+                </picture>
+                 
                 <div class="team-list__box">
                    <h3 class="team-list__title">Николай Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -342,7 +391,21 @@
             </li>
             <li class="team-list__item">
             <article>
+               <picture>
+                   <source
+                  srcset="./images/workers/wor4-1x-desk.jpg 1x, ./images/workers/wor4-2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/workers/wor4-1x-tab.jpg 1x,./images/workers/wor4-2x-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/workers/wor4-1x-mob.jpg 1x, ./images/workers/wor4-2x-mob.jpg 2x"
+                  media="(min-width: 320px)"/>
                   <img src="./images/photo4.jpg" alt="Михаил Ермаков" class="team-list__image" />
+                </picture>
+                 
                 <div class="team-list__box">
                    <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p class="team-list__text">UI Designer</p>
