@@ -1,3 +1,8 @@
+.container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 .footer {
   background: var(--footer-color);
   padding-top: 60px;
@@ -13,9 +18,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 76px;
   }
   @media screen and (min-width: 1200px) {
-    margin: right 70px;
+    // margin: right 70px;
     display: flex;
     flex-wrap: wrap;
     margin-right: auto;
@@ -88,7 +94,7 @@
   }
 }
 .address-list__item:last-child {
-  // margin-bottom: 0;
+  margin-bottom: 0;
   // @media screen and (min-width: 480px) {
   //   margin-bottom: 60px;
   // }
@@ -117,12 +123,15 @@
     display: block;
     width: 100%;
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
     text-align: center;
+    margin-right: auto;
+    margin-left: 165px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: auto;
+    margin-bottom: 72px;
   }
 }
 .join__title {
@@ -156,15 +165,6 @@
 }
 .join__item:last-child {
   margin-right: 0;
-  @media screen and (min-width: 480px) {
-    margin-bottom: 65px;
-  }
-  @media screen and (min-width: 768px) {
-    // margin-right: 89px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: 0;
-  }
 }
 
 .join__link {
@@ -282,18 +282,22 @@
   @media screen and (min-width: 480px) {
     width: 200px;
     height: 50px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   @media screen and (min-width: 768px) {
     width: 200px;
     height: 50px;
     display: flex;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     width: 200px;
