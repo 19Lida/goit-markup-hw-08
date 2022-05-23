@@ -1,9 +1,9 @@
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
+  display: flex;
 }
 .navigation {
-  position: fixed;
   top: 0;
   left: 0;
 }
@@ -15,11 +15,11 @@
   display: block;
 }
 .men-list__item {
-  margin-left: 40px;
+  margin-left: ;
 }
-.men-list__item:last-child {
-  margin-bottom: 302px;
-}
+// .men-list__item:last-child {
+//   margin-bottom: 302px;
+// }
 .men-list__link current {
   position: absolute;
   width: 48px;
@@ -53,12 +53,12 @@
   display: block;
 }
 .connect-list__item {
-  margin-left: 40px;
-  margin-bottom: 32px;
+  //   margin-left: 40px;
+  //   margin-bottom: 32px;
 }
-.connect-list__item:last-child {
-  margin-bottom: 64px;
-}
+// .connect-list__item:last-child {
+//   margin-bottom: 64px;
+// }
 .connect-list__link {
   font-family: 'Roboto';
   font-style: normal;
@@ -77,6 +77,11 @@
   }
 }
 .connect-list__icon-envelope {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+.connect-list__icon-smartphone {
   @media screen and (max-width: 480px) {
     display: none;
   }
@@ -165,9 +170,9 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+  //   @media screen and (max-width: 768px) {
+  //     flex-direction: column;
+  //   }
 }
 .connection-list__item {
   margin-right: 50px;
@@ -193,31 +198,51 @@
   fill: currentColor;
 }
 .connection-list__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
-  display: flex;
+  //   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   :focus {
     color: var(--accent-color);
   }
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 768px);
 }
+
 .menu-button {
   display: block;
   margin-left: auto;
   padding: 0;
   border: none;
+  color: #000000;
   background-color: transparent;
-  @media screen and (min-width: 768px) {
+  cursor: pointer;
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
     display: none;
   }
+}
+.icon-menu {
+  padding: 10px;
+  fill: currentColor;
+}
+.close-cross {
+  padding: 10px, 15px;
+  fill: currentColor;
 }
 .menu-button .close-cross {
   display: none;
@@ -229,6 +254,7 @@
   display: block;
 }
 .menu-container {
+  padding: 15px;
   display: none;
   position: absolute;
   top: 0;
