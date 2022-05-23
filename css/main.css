@@ -828,7 +828,12 @@ p {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-list {
+    display: flex;
+  }
 }
 
 .connection-list {
@@ -837,6 +842,19 @@ p {
   list-style: none;
   justify-content: end;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .connection-list {
+    display: block;
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connection-list {
+    flex-direction: column;
+  }
 }
 
 .menu-list__item {
