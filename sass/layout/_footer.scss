@@ -1,6 +1,7 @@
 .container {
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 .footer {
@@ -16,20 +17,23 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    align-items: baseline;
     align-items: center;
-    margin-right: 76px;
+    width: 100%;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     // margin: right 70px;
     display: flex;
     flex-wrap: wrap;
     margin-right: auto;
+    padding-top: 72px;
+    padding-bottom: 100px;
   }
 }
 .footer-address {
   // margin-right: 70px;
-  flex-grow: 1;
+  // flex-grow: 1;
   @media screen and (min-width: 768px) {
     justify-content: space-between;
   }
@@ -94,10 +98,9 @@
   }
 }
 .address-list__item:last-child {
-  margin-bottom: 0;
-  // @media screen and (min-width: 480px) {
-  //   margin-bottom: 60px;
-  // }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
 }
 .address-list__li {
   font-style: normal;
@@ -126,12 +129,12 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
     text-align: center;
-    margin-right: auto;
-    margin-left: 165px;
+    margin-left: auto;
+    margin-right: 89px;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: auto;
-    margin-bottom: 72px;
+    padding-top: 72px;
+    padding-bottom: 100px;
   }
 }
 .join__title {
@@ -157,7 +160,7 @@
   justify-content: center;
   @media screen and (min-width: 480px) {
     width: 100%;
-    margin: 0;
+    margin-bottom: 60px;
   }
 }
 .join__item {
@@ -191,7 +194,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
+    padding-bottom: 94px;
+  }
 }
 .form__title {
   margin-bottom: 20px;
@@ -207,6 +214,9 @@
     justify-content: center;
     text-align: center;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
 }
 .form__input-block {
   @media screen and (max-width: 767px) {
@@ -216,7 +226,6 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 .form__post {
