@@ -280,7 +280,11 @@ p {
 
 .header {
   border-bottom: 1px solid #ececec;
+  display: flex;
   position: relative;
+}
+
+.header__container {
   display: flex;
 }
 
@@ -294,11 +298,17 @@ p {
   margin: 0;
   list-style: none;
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .men-list__item {
-  margin-left: 0;
+  margin-bottom: 32px;
+}
+
+.men-list__item:last-child {
+  margin-bottom: 32px;
 }
 
 .men-list__link current {
@@ -335,11 +345,13 @@ p {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: block;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .connect-list__item {
-  margin-left: 40px;
   margin-bottom: 32px;
 }
 
@@ -366,16 +378,12 @@ p {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .connect-list__icon-envelope {
-    display: none;
-  }
+.connect-list__icon-envelope {
+  display: none;
 }
 
-@media screen and (min-width: 480px) {
-  .connect-list__icon-smartphone {
-    display: none;
-  }
+.connect-list__icon-smartphone {
+  display: none;
 }
 
 .menu-list {
@@ -383,6 +391,12 @@ p {
   margin: 0;
   list-style: none;
   flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -465,10 +479,12 @@ p {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+  .connection-list {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -477,7 +493,7 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .connection-list {
     flex-direction: column;
   }
@@ -485,8 +501,9 @@ p {
 
 @media screen and (min-width: 1200px) {
   .connection-list {
-    display: flex;
     flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
   }
 }
 
@@ -546,6 +563,9 @@ p {
 
 .menu-button {
   display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
   margin-left: auto;
   padding: 0;
   border: none;
@@ -622,6 +642,8 @@ p {
   line-height: 1.2;
   color: var(--accent-color);
   justify-content: center;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .header__logo {
@@ -734,11 +756,17 @@ p {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -865,9 +893,6 @@ p {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  justify-content: end;
-  align-items: center;
 }
 
 .menu-list__item {
@@ -942,32 +967,15 @@ p {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
-  .connection-list__icon-envelope {
-    display: none;
-  }
-}
-
 .connection-list__icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-}
-
-@media screen and (min-width: 480px) {
-  .connection-list__icon-smartphone {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .connection-list__icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
-  }
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .connection-list__link {
@@ -996,7 +1004,6 @@ p {
 @media screen and (min-width: 480px) {
   .mob-social {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -1258,7 +1265,6 @@ p {
 @media screen and (min-width: 1200px) {
   .application {
     display: flex;
-    flex-wrap: wrap;
     margin: -15px;
   }
 }
@@ -1453,6 +1459,25 @@ img {
 .soc-list__link :focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.container {
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
