@@ -15,7 +15,7 @@
   display: block;
 }
 .men-list__item {
-  margin-left: ;
+  margin-left: 0;
 }
 // .men-list__item:last-child {
 //   margin-bottom: 302px;
@@ -53,12 +53,12 @@
   display: block;
 }
 .connect-list__item {
-  //   margin-left: 40px;
-  //   margin-bottom: 32px;
+  margin-left: 40px;
+  margin-bottom: 32px;
 }
-// .connect-list__item:last-child {
-//   margin-bottom: 64px;
-// }
+.connect-list__item:last-child {
+  margin-bottom: 64px;
+}
 .connect-list__link {
   font-family: 'Roboto';
   font-style: normal;
@@ -77,12 +77,12 @@
   }
 }
 .connect-list__icon-envelope {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
 }
 .connect-list__icon-smartphone {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
 }
@@ -93,11 +93,12 @@
   list-style: none;
   // display: flex;
   flex-direction: column;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  //   @media screen and (max-width: 767px) {
+  //     display: flex;
+  //   }
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    display: flex;
   }
 
   @media screen and (min-width: 1200px) {
@@ -167,18 +168,32 @@
   justify-content: end;
   align-items: center;
   flex-direction: column;
+  //   @media screen and (min-width: 480px) {
+  //     display: block;
+  //   }
   @media screen and (max-width: 767px) {
     display: none;
   }
-  //   @media screen and (max-width: 768px) {
-  //     flex-direction: column;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  //   @media screen and (min-width: 768px) {
+  //     margin-left: 84px;
   //   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .connection-list__item {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 .connection-list__item:last-child {
-  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 
 .connection-list .connection-list__icon-envelope:hover,
@@ -217,7 +232,8 @@
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  @media screen and (min-width: 768px);
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .menu-button {
@@ -227,6 +243,7 @@
   border: none;
   color: #000000;
   background-color: transparent;
+  border: none;
   cursor: pointer;
   &:hover,
   :focus {
@@ -254,7 +271,8 @@
   display: block;
 }
 .menu-container {
-  padding: 15px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   display: none;
   position: absolute;
   top: 0;

@@ -1,10 +1,15 @@
-.header {
-  border-bottom: 1px solid #ececec;
-}
+// .header {
+//   border-bottom: 1px solid #ececec;
+// }
 .header__container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 // .header-nav {
 //   display: flex;
@@ -50,29 +55,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  // display: flex;
-  // @media screen and (min-width: 480px) {
-  //   display: block;
-  // }
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 }
 .connection-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  // display: flex;
+  display: flex;
   justify-content: end;
   align-items: center;
-  @media screen and (min-width: 480px) {
-    display: block;
-    justify-content: end;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 .menu-list__item {
   margin-right: 50px;
@@ -85,11 +75,6 @@
 }
 .connection-list__item:last-child {
   margin-right: 0;
-}
-.connection-list__item {
-  @media screen and (max-width: 1199px) {
-    margin-left: 84px;
-  }
 }
 
 .connection-list .connection-list__icon-envelope:hover,
@@ -153,6 +138,12 @@
   @media screen and (min-width: 480px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 .connection-list__link {
   // padding-top: 32px;
@@ -173,9 +164,10 @@
   @media screen and (min-width: 1200px) {
     // padding-top: 32px;
     // padding-bottom: 32px;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
+  }
 }
 .mob-social {
   padding: 0;
@@ -183,11 +175,10 @@
   list-style: none;
   text-decoration: none;
   @media screen and (min-width: 480px) {
- display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
-  
 
 // .mob-social__link {
 //   margin-right: 20px;
