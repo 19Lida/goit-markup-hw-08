@@ -571,7 +571,6 @@ p {
 
 .menu-button {
   display: block;
-  position: fixed;
   top: 0px;
   right: 0px;
   margin-left: auto;
@@ -1042,7 +1041,7 @@ p {
   padding-top: 118px;
   padding-bottom: 118;
   height: 400px;
-  max-width: 1600px;
+  min-width: 480px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-img-mob1x.jpg);
@@ -1060,6 +1059,10 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero {
+    height: 400px;
+    min-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
@@ -1091,6 +1094,7 @@ p {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
     height: 600px;
     text-align: center;
   }
@@ -1852,9 +1856,14 @@ img {
 
 /* Форма */
 .form {
-  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1939,6 +1948,7 @@ img {
 @media screen and (min-width: 1200px) {
   .form__post {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
