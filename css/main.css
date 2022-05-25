@@ -588,7 +588,7 @@ p {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .menu-button {
     display: none;
   }
@@ -1618,7 +1618,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .flex-container {
     display: flex;
     align-items: baseline;
   }
