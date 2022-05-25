@@ -3,6 +3,10 @@
   // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -29,31 +33,32 @@
 }
 .team-list__item {
   // margin-right: 30px;
+  width: 450px;
   background-color: var(--white-color);
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
     }
   }
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
+  // &:not(:last-child) {
+  //   @media screen and (max-width: 1199px) {
+  //     margin-bottom: 30px;
+  //   }
+
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  // }
   @media screen and (min-width: 1200px) {
     width: 270px;
   }

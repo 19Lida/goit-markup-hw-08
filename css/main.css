@@ -306,7 +306,7 @@ p {
 .men-list__item {
   margin-top: 48px;
   margin-bottom: 32px;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .men-list__item:last-child {
@@ -355,7 +355,7 @@ p {
 
 .connect-list__item {
   margin-bottom: 32px;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .connect-list__item:last-child {
@@ -642,7 +642,7 @@ p {
 
 .mob-social__item {
   margin-right: 20px;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .mob-social__item:last-child {
@@ -814,11 +814,25 @@ p {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .pre-title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pre-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .modal__button {
@@ -1255,6 +1269,10 @@ p {
   }
 }
 
+.section--no padding top {
+  display: none;
+}
+
 .pre-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -1340,6 +1358,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -1374,6 +1399,7 @@ img {
 }
 
 .team-list__item {
+  width: 450px;
   background-color: var(--white-color);
 }
 
@@ -1384,34 +1410,16 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .team-list__item {
-    width: calc((100% - 8 * 15px) / 4);
-    margin: 15px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .team-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .team-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .team-list__item {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team-list__item {
-    width: 354px;
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 
@@ -2275,7 +2283,6 @@ img {
 @media screen and (min-width: 768px) {
   .filter-list {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 30px;
   }
 }
@@ -2283,7 +2290,6 @@ img {
 @media screen and (min-width: 1200px) {
   .filter-list {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 50px;
   }
 }
