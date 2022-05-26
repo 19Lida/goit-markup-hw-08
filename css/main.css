@@ -278,6 +278,11 @@ p {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
   display: flex;
@@ -484,8 +489,6 @@ p {
 }
 
 .connection-list {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -921,15 +924,7 @@ p {
 }
 
 .connection-list {
-  padding: 0;
-  margin: 0;
   list-style: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .connection-list {
-    display: flex;
-  }
 }
 
 @media screen and (min-width: 1200px) {
