@@ -33,7 +33,7 @@
 }
 .team-list__item {
   // margin-right: 30px;
-  width: 450px;
+  // width: 450px;
   background-color: var(--white-color);
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
