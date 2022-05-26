@@ -1814,7 +1814,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .join {
     justify-content: space-around;
     text-align: center;
@@ -1824,6 +1824,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .join {
+    margin-left: 70px;
     margin-bottom: 0;
   }
 }
