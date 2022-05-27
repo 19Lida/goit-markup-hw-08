@@ -162,6 +162,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  justify-content: center;
+  text-align: center;
   @media screen and (max-width: 1199px) {
     justify-content: center;
     text-align: center;
