@@ -1,27 +1,11 @@
-// @media screen and (min-width: 480px) {
-//   .container {
-//     max-width: 480px;
-//   }
-// }
-// @media screen and (min-width: 768px) {
-//   .container {
-//     max-width: 768px;
-//   }
-// }
-// @media screen and (min-width: 1200px) {
-//   .container {
-//     max-width: 1200pxpx;
-//   }
-// }
-
 .header {
   border-bottom: 1px solid #ececec;
   display: flex;
-  // position: relative;
+  position: relative;
 }
 .header__container {
-  // position: relative;
   display: flex;
+  align-items: center;
 }
 .menu-list {
   padding: 0;
@@ -47,11 +31,22 @@
     flex-wrap: wrap;
   }
 }
+// .menu-list__item {
+//   margin-right: 50px;
+// }
+// .menu-list__item:last-child {
+//   margin-right: 0;
+// }
+
 .menu-list__item {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 .menu-list__item:last-child {
-  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 .menu-list__link current {
   position: absolute;
@@ -139,6 +134,17 @@
 // }
 
 .connection-list__item {
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+  }
+}
+.connection-list__item:last-child {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 21px;
+  }
+}
+
+.connection-list__item {
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
@@ -183,6 +189,13 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
   }
 }
 
@@ -259,7 +272,7 @@
   padding-bottom: 48px;
   padding-left: 15px;
   padding-right: 15px;
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -274,13 +287,17 @@
 }
 
 .navigation {
-  top: 0;
-  left: 0;
-  display: flex;
+  // top: 0;
+  // left: 0;
+  // display: flex;
+  margin-left: 40px;
+  height: auto;
+  background-color: #ffffff;
 }
 .men-list {
-  // padding: 0;
+  padding: 0;
   // margin: 0;
+  margin: 0 0 302px 0;
   list-style: none;
   text-decoration: none;
   display: flex;
@@ -290,7 +307,7 @@
 }
 .men-list__item {
   margin-top: 48px;
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
   margin-left: 40px;
 }
 .men-list__item:last-child {
@@ -309,7 +326,7 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
   text-decoration: none;
@@ -334,6 +351,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 64px;
 }
 .connect-list__item {
   margin-bottom: 32px;
@@ -376,8 +394,9 @@
 
 .mob-social {
   padding: 0;
-  margin: 0;
+  margin: 0 0 48px 0;
   list-style: none;
+  display: flex;
   flex-wrap: wrap;
 }
 .mob-social__item {

@@ -11,6 +11,9 @@
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   justify-content: center;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .application {
   list-style: none;
