@@ -206,7 +206,7 @@
   margin-left: auto;
   justify-content: center;
   align-items: center;
-  padding: 12px 8px;
+  // padding: 12px 8px;
   top: 10px;
   right: 15px;
   border: none;
@@ -248,7 +248,7 @@
   &:hover,
   :focus {
     color: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    // border: 1px solid var(--accent-color);
   }
 }
 .icon-menu {
@@ -268,21 +268,23 @@
 }
 
 .menu-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-top: 48px;
+  // padding-bottom: 48px;
+  // padding-left: 15px;
+  // padding-right: 15px;
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   background-color: #ffffff;
   // padding: 0;
   // text-align: center;
   &.is-open {
     display: block;
+    // visibility: visible;
+    // opacity: 1;
   }
 }
 
@@ -306,9 +308,9 @@
   // margin-bottom: 32px;
 }
 .men-list__item {
-  margin-top: 48px;
-  // margin-bottom: 32px;
-  margin-left: 40px;
+  // margin-top: 48px;
+  margin-bottom: 32px;
+  // margin-left: 40px;
 }
 .men-list__item:last-child {
   margin-bottom: 0;
@@ -342,6 +344,8 @@
 }
 .contacts {
   display: flex;
+  flex-direction: column;
+  margin-left: 40px;
 }
 .connect-list {
   // padding: 0;
@@ -355,7 +359,7 @@
 }
 .connect-list__item {
   margin-bottom: 32px;
-  margin-left: 40px;
+  // margin-left: 40px;
 }
 .connect-list__item:last-child {
   margin-bottom: 0;
@@ -399,16 +403,20 @@
   display: flex;
   flex-wrap: wrap;
 }
-.mob-social__item {
-  margin-right: 20px;
+.mob-social__item:not(:first-child) {
   margin-left: 40px;
+  // @media screen and (min-width: 768px) {
+  //   margin-right: 10px;
+  // }
+
+  // margin-left: 40px;
   // margin-top: 64px;
 }
 .mob-social__item:last-child {
   margin-right: 0;
 }
 .mob-social__link {
-  margin-right: 20px;
+  // margin-right: 20px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -417,4 +425,7 @@
   color: var(--accent-color);
   justify-content: center;
   text-decoration: none;
+  // @media screen and (max-width: 420px) {
+  //   font-size: 12px;
+  // }
 }
