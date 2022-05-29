@@ -564,7 +564,6 @@ ul {
 }
 
 .menu-container {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -573,7 +572,8 @@ ul {
 }
 
 .menu-container.is-open {
-  display: block;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .navigation {

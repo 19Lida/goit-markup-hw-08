@@ -272,19 +272,20 @@
   // padding-bottom: 48px;
   // padding-left: 15px;
   // padding-right: 15px;
-  display: none;
+  // display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   // height: 100vh;
   background-color: #ffffff;
+  // justify-content: space-between;
   // padding: 0;
   // text-align: center;
   &.is-open {
-    display: block;
-    // visibility: visible;
-    // opacity: 1;
+    // display: block;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
@@ -425,7 +426,4 @@
   color: var(--accent-color);
   justify-content: center;
   text-decoration: none;
-  // @media screen and (max-width: 420px) {
-  //   font-size: 12px;
-  // }
 }
