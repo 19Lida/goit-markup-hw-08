@@ -139,16 +139,16 @@
 //   }
 // }
 
-.connection-list__item {
-  @media screen and (min-width: 768px) {
-    padding-top: 21px;
-  }
-}
-.connection-list__item:last-child {
-  @media screen and (min-width: 768px) {
-    padding-bottom: 21px;
-  }
-}
+// .connection-list__item {
+//   @media screen and (min-width: 768px) {
+//     padding-top: 21px;
+//   }
+// }
+// .connection-list__item:last-child {
+//   @media screen and (min-width: 768px) {
+//     padding-bottom: 21px;
+//   }
+// }
 
 .connection-list__item {
   @media screen and (min-width: 1200px) {
@@ -202,6 +202,16 @@
     //   display: flex;
     //   flex-wrap: wrap;
     // }
+  }
+}
+.connection-list__link {
+  @media screen and (max-width: 1199px) {
+    padding-top: 21px;
+  }
+}
+.connection-list__item:last-child {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 21px;
   }
 }
 
