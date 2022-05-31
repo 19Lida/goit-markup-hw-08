@@ -302,6 +302,9 @@
     visibility: hidden;
     opacity: 0;
   }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
 .navigation {

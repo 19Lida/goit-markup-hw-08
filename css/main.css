@@ -586,6 +586,12 @@ ul {
   opacity: 0;
 }
 
+@media screen and (min-width: 767px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 .navigation {
   display: flex;
   margin-left: 40px;
@@ -1411,6 +1417,12 @@ img {
   margin: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .clients {
+    margin: -15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .clients {
     display: flex;
@@ -1428,6 +1440,7 @@ img {
 @media screen and (min-width: 480px) {
   .clients__item {
     width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
@@ -1474,18 +1487,6 @@ img {
 .clients__link :focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .clients__link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__link {
-    width: 170px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1754,6 +1755,13 @@ img {
 
 @media screen and (max-width: 1199px) {
   .form__title {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form__input-block {
     justify-content: center;
     text-align: center;
   }
@@ -2154,6 +2162,7 @@ img {
 @media screen and (min-width: 768px) {
   .filter-list {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
   }
 }
@@ -2161,6 +2170,7 @@ img {
 @media screen and (min-width: 1200px) {
   .filter-list {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
   }
 }
