@@ -12,12 +12,12 @@
 .address-main {
   // display: flex;
   align-items: baseline;
-  @media screen and (min-width: 480px) {
-    display: block;
-    align-items: center;
-    align-items: baseline;
-    margin-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px) {
+  display: block;
+  align-items: center;
+  align-items: baseline;
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     // padding-left: 76px;
     // padding-right: 89px;
@@ -40,9 +40,9 @@
 .footer-address {
   // margin-right: 70px;
   // flex-grow: 1;
-  @media screen and (min-width: 480px) {
-    margin-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px) {
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     justify-content: space-between;
     margin-bottom: 0;
@@ -137,10 +137,10 @@
 }
 .join {
   // margin-right: auto;
-  @media screen and (min-width: 480px) {
-    display: block;
-    // margin-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px) {
+  display: block;
+  // margin-bottom: 60px;
+
   @media screen and (max-width: 1199px) {
     justify-content: space-around;
     text-align: center;
@@ -148,6 +148,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    // display: flex;
     margin-left: 70px;
     margin-bottom: 0;
   }
@@ -167,6 +168,8 @@
   @media screen and (max-width: 1199px) {
     justify-content: center;
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
 .join__list {
@@ -272,12 +275,12 @@
 
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
     width: 450px;
   }
@@ -312,16 +315,16 @@
     color: var(--white-color);
     background-color: var(--accent-color);
   }
-  @media screen and (min-width: 480px) {
-    width: 200px;
-    height: 50px;
-    // margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  // @media screen and (min-width: 480px) {
+  width: 200px;
+  height: 50px;
+  // margin-bottom: 20px;
+  display: block;
+  // justify-content: center;
+  // align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+
   @media screen and (min-width: 768px) {
     width: 200px;
     height: 50px;
