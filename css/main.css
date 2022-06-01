@@ -1904,9 +1904,21 @@ img {
 }
 
 .backdrop-form {
-  width: 448px;
   margin-left: auto;
   margin-right: auto;
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop-form {
+    width: 448px;
+  }
 }
 
 .backdrop-form__div {
