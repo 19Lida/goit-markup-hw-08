@@ -178,11 +178,11 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  @media screen and (min-width: 480px) {
-    width: 100%;
-    margin-bottom: 0px;
-  }
+  // @media screen and (min-width: 480px) {
+  width: 100%;
+  margin-bottom: 0px;
 }
+
 .join__item {
   margin-right: 10px;
 }
@@ -241,10 +241,10 @@
   }
 }
 .form__input-block {
-  @media screen and (min-width: 480px) {
-    justify-content: center;
-    text-align: center;
-  }
+  // @media screen and (min-width: 480px) {
+  justify-content: center;
+  text-align: center;
+
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -319,7 +319,7 @@
   width: 200px;
   height: 50px;
   // margin-bottom: 20px;
-  display: block;
+  display: flex;
   // justify-content: center;
   // align-items: center;
   margin-right: auto;

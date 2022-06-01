@@ -907,7 +907,6 @@ ul {
   padding-top: 118px;
   padding-bottom: 118px;
   height: 400px;
-  min-width: 480px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-img-mob1x.jpg);
@@ -968,18 +967,13 @@ ul {
 
 .hero__title {
   margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  margin-top: 0%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-}
-
-@media screen and (min-width: 480px) {
-  .hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6;
-    margin-top: 0%;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1076,12 +1070,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-text-color);
-}
-
-@media screen and (max-width: 480px) {
-  .specific-list__title {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1101,12 +1090,7 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-@media screen and (max-width: 480px) {
-  .specific-list__text {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1385,13 +1369,7 @@ img {
 .clients {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .clients {
-    margin: -15px;
-  }
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1408,11 +1386,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .clients__item {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
+.clients__item {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1429,6 +1405,12 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .clients__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .clients__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1436,7 +1418,7 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .clients__item:not(:last-child) {
+  .clients__item:not(:last-child):not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1657,13 +1639,8 @@ img {
   margin: 0;
   display: flex;
   justify-content: center;
-}
-
-@media screen and (min-width: 480px) {
-  .join__list {
-    width: 100%;
-    margin-bottom: 0px;
-  }
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .join__item {
@@ -1723,11 +1700,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .form__input-block {
-    justify-content: center;
-    text-align: center;
-  }
+.form__input-block {
+  justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1796,7 +1771,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 200px;
   height: 50px;
-  display: block;
+  display: flex;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1846,8 +1821,8 @@ img {
 }
 
 .modal {
-  min-height: 581px;
-  min-width: 528px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: var(--white-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1856,6 +1831,20 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .modal__button {
@@ -1907,12 +1896,12 @@ img {
 .backdrop-form {
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  width: 370px;
 }
 
 @media screen and (min-width: 768px) {
   .backdrop-form {
-    width: 450px;
+    width: 370px;
   }
 }
 
@@ -2055,11 +2044,25 @@ img {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop-form__text {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop-form__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .backdrop-form__link {

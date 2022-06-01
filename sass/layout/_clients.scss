@@ -33,12 +33,13 @@
 .clients {
   list-style: none;
   padding: 0;
-  margin: 0;
+  // margin: 0;
   // display: flex;
   // justify-content: center;
-  @media screen and (min-width: 480px) {
-    margin: -15px;
-  }
+  // @media screen and (min-width: 480px) {
+
+  margin: -15px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -50,10 +51,10 @@
 }
 .clients__item {
   // margin-right: 30px;
-  @media screen and (min-width: 480px) {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
+  // @media screen and (min-width: 480px) {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
@@ -62,15 +63,20 @@
     width: calc((100% - 12 * 15px) / 6);
     margin: 15px;
   }
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 30px;
+    }
+  }
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 30px;
+    &:not(:last-child) {
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
