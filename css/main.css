@@ -704,15 +704,11 @@ ul {
 }
 
 .mob-social {
-  padding: 0;
+  padding-left: 40;
   margin: 0 0 48px 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-}
-
-.mob-social__item:not(:first-child) {
-  padding-left: 40px;
 }
 
 .mob-social__item {
