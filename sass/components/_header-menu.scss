@@ -285,6 +285,7 @@
 .menu-container {
   // padding-top: 48px;
   // padding-bottom: 48px;
+
   padding-left: 15px;
   padding-right: 15px;
   // display: none;
@@ -294,9 +295,7 @@
   width: 100%;
   // height: 100vh;
   background-color: #ffffff;
-  // justify-content: space-between;
-  // padding: 0;
-  // text-align: center;
+
   &.is-open {
     // display: block;
     visibility: hidden;

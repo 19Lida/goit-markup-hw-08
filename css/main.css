@@ -1655,6 +1655,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
   justify-content: center;
 }
 
@@ -2112,12 +2113,7 @@ img {
   margin: 0;
   list-style: none;
   justify-content: center;
-}
-
-@media screen and (min-width: 480px) {
-  .filter-list {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2141,6 +2137,7 @@ img {
 }
 
 .filter-list .filter-list__item {
+  margin-bottom: 15px;
   justify-content: center;
   display: inline-block;
 }

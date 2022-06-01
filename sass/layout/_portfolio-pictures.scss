@@ -17,9 +17,9 @@
   // display: flex;
   justify-content: center;
   // margin-bottom: 50px;
-  @media screen and (min-width: 480px) {
-    margin-bottom: 40px;
-  }
+  // @media screen and (min-width: 480px) {
+  margin-bottom: 40px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -35,6 +35,7 @@
   margin-right: 8px;
 }
 .filter-list .filter-list__item {
+  margin-bottom: 15px;
   justify-content: center;
   display: inline-block;
 }
