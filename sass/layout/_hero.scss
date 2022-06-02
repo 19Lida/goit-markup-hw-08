@@ -49,10 +49,10 @@
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/header-img-mob1x.jpg);
+    url(../images/header-img-mob1x.jpg);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/header-img-mob2x.jpg);
+      url(../images/header-img-mob2x.jpg);
   }
   @media screen and (min-width: 768px) {
     height: 400px;
@@ -63,10 +63,10 @@
     padding-bottom: 118px;
     text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/header-img-tab1x.jpg);
+      url(../images/header-img-tab1x.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/header-img-tab2x.jpg);
+        url(../images/header-img-tab2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -74,10 +74,10 @@
     padding-bottom: 200px;
     // text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/img-desk1x.jpg);
+      url(../images/img-desk1x.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/img-desk2x.jpg);
+        url(../images/img-desk2x.jpg);
     }
   }
   background-repeat: no-repeat;
