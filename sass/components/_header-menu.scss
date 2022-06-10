@@ -109,7 +109,11 @@
     margin-left: auto;
   }
 }
-
+.connection-list__item:last-child {
+  @media screen and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+}
 .connection-list__item {
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
@@ -239,7 +243,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -257,10 +261,10 @@
 }
 
 .navigation {
-  // display: flex;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  // background-color: #ffffff;
   margin-bottom: auto;
-  // margin-bottom: 302px;
 }
 .men-list {
   padding: 0;
@@ -318,6 +322,8 @@
   margin-bottom: 32px;
 }
 .connect-list__item:last-child {
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 10px;
   margin-bottom: 0;
 }
 

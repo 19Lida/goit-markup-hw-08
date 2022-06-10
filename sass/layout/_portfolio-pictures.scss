@@ -108,6 +108,7 @@ h2 {
   line-height: 1.5;
   letter-spacing: 0.03em;
   padding: 63px 24px;
+  overflow-y: scroll;
   color: var(--white-color);
   background-color: var(--accent-color);
   transform: translateY(101%);
