@@ -591,6 +591,7 @@ ul {
   height: 100%;
   max-width: 767px;
   background-color: #ffffff;
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
@@ -1006,6 +1007,7 @@ ul {
 }
 
 .section {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -1226,13 +1228,8 @@ img {
 }
 
 .section {
+  padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1354,6 +1351,7 @@ img {
 }
 
 .section {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -2206,6 +2204,12 @@ img {
   margin-bottom: 15px;
   justify-content: center;
   display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list .filter-list__item {
+    margin-bottom: 0;
+  }
 }
 
 .filter-list__button {

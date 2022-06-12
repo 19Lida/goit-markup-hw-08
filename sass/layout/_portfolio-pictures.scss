@@ -34,6 +34,11 @@
   justify-content: center;
   display: inline-block;
 }
+.filter-list .filter-list__item {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
 .filter-list__button {
   padding: 6px 22px;
   font-weight: 500;
